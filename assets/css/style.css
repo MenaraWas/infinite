@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans|Lato&display=swap');
+
+@font-face{
+    src: url('../fonts/SFProText-Regular.ttf');
+    font-family: 'SF Pro';
+}
 
 * {
     margin: 0;
@@ -5,7 +11,8 @@
 } 
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'SF Pro', sans-serif;
+    overflow-x: hidden;
 }
 
 .divider-small {
@@ -158,6 +165,7 @@ a:hover{
 }
 
 .big-img-news img{
+    transform: scale(1.15);
     margin: 0 auto;
     height: 100%;
     width: auto;
@@ -166,9 +174,12 @@ a:hover{
 .news-img-wrapper {
     background: #fff;
     height:200px;
+    overflow: hidden;
 }
 .news-img-wrapper img{
-    height: 200px;
+    height: 100%;
+    width: auto;
+    transform: scale(1.05);
 }
 
 .common-news {
@@ -176,11 +187,22 @@ a:hover{
 }
 
 .common-news .card{
-  margin: 7px auto;
+    width: 18rem;
+    margin: 7px auto;
 }
 
 .btn-more {
     margin: 0px 0px 60px 0px;
+}
+
+.btn-primary{
+    background-color: #106e92;
+    border-color: #106e92;
+    border-radius: 0;
+}
+
+.common-news .btn-more.btn-block{
+    text-align: left;
 }
 
 .post-content{
@@ -188,6 +210,12 @@ a:hover{
     bottom: 0;
     right: 0;
     left:25px;
+}
+
+@media(max-width: 768px){
+    .post-content{
+        left: 0;
+    }
 }
 
 .post-date{
@@ -237,7 +265,7 @@ a:hover{
     color:#707070;
 }
 .post-tag{
-    font-size: 12px;
+    font-size: 11pt;
     font-weight:bold;
     margin-top: 15px;
 }
