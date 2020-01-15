@@ -28,6 +28,12 @@ a:hover{
     color: #149fc0;
 }
 
+/* Overwrite bootstrap style start */
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+/* Overwrite bootstrap style stop */
+
 /*navbar start */
 
 .navbar-brand{
