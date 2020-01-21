@@ -30,6 +30,24 @@
 nav{
     z-index: 2;
 }
+.pagination{
+    justify-content: center;
+}
+.page-link{
+    position: relative;
+    display: block;
+    padding: 0.95rem 1.25rem;
+    margin-left: 10px;
+    line-height: 1.25;
+    color: #5b5b5b;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: 0.25s all;
+}
+.page-link:hover{
+    background: #5b5b5b;
+    color: #fff;
+}
 /* Overwrite bootstrap style stop */
 /*navbar start */
  .navbar-brand{
@@ -642,6 +660,18 @@ nav{
 
 .news-content-wraper{
     padding: 5px 0px;
+}
+
+.news-content-wraper h3{
+    transition: 0.125s all;
+}
+
+.news-content-wraper h3:hover{
+    cursor: pointer;
+}
+
+.news-content-wraper:hover h3{
+    color: #50b0bb;
 }
 
 @media(max-width: 540px){
