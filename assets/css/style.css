@@ -49,6 +49,7 @@ nav{
     color: #fff;
 }
 /* Overwrite bootstrap style stop */
+
 /*navbar start */
  .navbar-brand{
      margin-left:15px;
@@ -67,7 +68,19 @@ nav{
  .nav-item:hover{
      border-bottom : 3px solid #007bff;
 }
+
+/*Sticky navbar*/
+.sticky {
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: 0.5s;
+}
+
 /*navbar end*/
+
 /*Banner start */
  #banner {
      padding: 80px 0px;
@@ -602,6 +615,7 @@ nav{
     bottom : 0px;
     text-align: left;
     padding: 20px;
+    z-index: 2;
     right: 0px;
     left: 65%;
 }
@@ -634,6 +648,7 @@ nav{
         background: #275769;
         justify-content: center;
         margin: 0;
+        z-index: 2;
     }
 }
 
@@ -645,17 +660,6 @@ nav{
     border-width: 0 200px 0 200px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 20px 0;
-}
-
-.news-img-wrapper{
-    width: 225px;
-    height: 225px;
-    margin: 0 auto;
-}
-
-.news-img-wrapper img{
-    height: 100%;
-    width: auto;
 }
 
 .news-content-wraper{
@@ -678,7 +682,7 @@ nav{
     #all-news .col-md-10 .row{
         margin: 0 20px;
     }
-    .news-img-wrapper{
+    #all-news .news-img-wrapper{
         width: 100%;
         margin: 15px 0px;
     }
