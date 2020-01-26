@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
  @font-face{
      src: url('../fonts/SFProText-Regular.ttf');
      font-family: 'SF Pro';
@@ -8,7 +9,7 @@
      padding: 0;
 }
  body {
-     font-family: 'SF Pro', sans-serif;
+     font-family: 'Roboto', sans-serif;
      overflow-x: hidden;
 }
  .divider-small {
@@ -25,7 +26,8 @@
 }
 /* Overwrite bootstrap style start */
  h1, h2, h3, h4, h5, h6{
-     font-weight: bold;
+    font-family: 'SF Pro'; 
+    font-weight: bold;
 }
 nav{
     z-index: 2;
@@ -201,6 +203,14 @@ nav{
 }
  .btn-more {
      margin: 0px 0px 60px 0px;
+}
+.common-news .btn-more{
+    border-bottom: 2px solid #1566ab;
+    color: #1566ab;
+    border-radius: 0;
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 4px;
 }
  .btn-primary{
      background-color: #106e92;
@@ -695,8 +705,41 @@ nav{
 
 /* Page news stop */
 
+/* Page events start */
+#all-events{
+    padding: 60px 0px;
+}
+
+#all-events .col-md-10 .row{
+    padding: 20px 0;
+}
+
+.events-img-wrapper {
+    background: #106e92;
+    height:200px;
+    overflow: hidden;
+}
+
+.events-img-wrapper img{
+    height: 100%;
+    width: auto;
+    transform: scale(1.05);
+}
+
+/* Page events stop */
 
 /* Page about start */
+.img-illustration{
+    height: 450px;
+}
+
+#member p{
+    font-size: 11em;
+}
+
+#member #kecil{
+    font-size: 20pt;
+}
 
 /* Styling pembina start */
 #pembina{
@@ -716,23 +759,6 @@ nav{
 }
 /* Styling pembina stop */
 
-/* Styling divisions start */
-.card-division{
-    background: #106e92;
-    color: #fff;
-    text-align: center;
-    font-size: 20pt;
-    padding: 25px 0px;
-    margin: 10px 0px;
-}
-.card-division i{
-    font-size: 3em;
-    padding: 20px 0px;
-}
-.row.our-division{
-    margin: 50px 0px;
-}
-/* Styling divisions stop */
 
 /* Page about stop */
 
