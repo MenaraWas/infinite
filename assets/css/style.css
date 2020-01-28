@@ -35,6 +35,9 @@ nav{
 .pagination{
     justify-content: center;
 }
+.pagination a {
+    border-radius: 5px;
+}
 .page-link{
     position: relative;
     display: block;
