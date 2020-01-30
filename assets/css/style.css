@@ -729,6 +729,12 @@ nav{
     transform: scale(1.05);
 }
 
+.badge-secondary{
+    background: transparent;
+    border : 1px solid #aaa;
+    color : #777;
+}
+
 /* Page events stop */
 
 /* Page about start */
