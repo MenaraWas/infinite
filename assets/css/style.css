@@ -59,9 +59,6 @@ nav{
  .navbar-brand{
      margin-left:15px;
 }
- .navbar-brand img {
-     height: 64px;
-}
  .navbar-brand p{
      display : inline-block;
      margin-top : 20px;
